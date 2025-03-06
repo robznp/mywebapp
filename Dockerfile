@@ -4,7 +4,7 @@ FROM nginx:alpine
 RUN apk add --no-cache gettext
 
 # Set environment variable for the header text
-ENV HEADER_TEXT="Welcome to My Static Page!"
+# ENV HEADER_TEXT="Welcome to My Static Page!"
 
 # Copy the HTML and CSS files into the container
 COPY index.html /usr/share/nginx/html/index.html
